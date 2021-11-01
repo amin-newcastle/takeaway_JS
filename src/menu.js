@@ -6,7 +6,8 @@ class Menu {
     };
 
     addDish = (dishName, dishPrice) => {
-        let dish = new Dish(dishName, dishPrice)
-        this._mainMenu.push(JSON.stringify(dish));
+        let dish = new Dish(dishName, dishPrice);
+        this._mainMenu.push(dish);
+        return this._mainMenu
     };    
 };
